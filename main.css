@@ -1,0 +1,89 @@
+/*
+Name: Yuxiao Fang
+Student Number: 991576960
+*/
+
+.grid-container{
+	display: grid;
+	grid:
+		'. h h h h .'
+		'F F F F F F';
+	font-weight:bold;
+	background-color: lightyellow;
+}
+
+#h{
+	grid-area: h;
+	font-size:2.3em;
+	font-weight:bold;
+	text-align:center;
+	border:5px solid red;
+	background-color:yellow;
+}
+
+.le{
+	font-weight:bold;
+	font-size:2.5em;
+}
+
+#F{
+	grid-area:F;
+	display:grid;
+	grid:
+		'f1 f1 f1 f2 f2 f2'
+		'f3 f3 f3 c c c'
+		's s s s s s';
+}
+
+#form1{
+	grid-area: f1;
+	background-color:blue;
+	width:42vw;
+	height:25vh;
+	margin: auto;
+}
+
+#form2{
+	grid-area:f2;
+	background-color: green;
+	width:42vw;
+	height:25vh;
+	margin: auto;
+}
+
+#form3{
+	grid-area:f3;
+	background-color:red;
+	width:42vw;
+	height:38vh;
+	margin:auto;
+}
+
+#comment{
+	grid-area:c;
+	width:42vw;
+	height:38vh;
+	margin: auto;
+}
+
+#submit{
+	grid-area:s;
+	width:18vw;
+	margin:0 38vw;
+}
+
+#submitbutton{
+	width:7vw;
+	height:7vh;
+	font-size:0.8em;
+	background-color:lightgreen;
+}
+
+#resetbutton{
+	width:7vw;
+	height:7vh;
+	font-size:0.8em;
+	background-color:lightgreen;
+}
+
+		

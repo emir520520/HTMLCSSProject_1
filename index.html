@@ -1,0 +1,75 @@
+<!doctype html>
+	<!--Name: Yuxiao Fang
+	  Student Number: 991576960
+	-->
+<html>
+<head>
+	<title>Yuxiao Fang</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body class="grid-container">
+	<header id="h">
+		Assignment#4/Yuxiao Fang/991576960
+	</header>
+	
+	<form name="f1" method="post" action="nowhere.php" onsubmit="submit1()" id="F">
+	<fieldset id="form1">
+		<legend class="le">Personal information</legend>
+		Last Name: <input type="lastName" placeholder="Fang" value="Fang" autofocus id="LN"><br>
+		First Name: <input type="firstName" placeholder="Yuxiao" value="Yuxiao" id="FN"><br>
+		Student Number: <input type="studentNumber" placeholder="991576960" value="991576960" id="SN"><br>
+		Sheridan Email: <input typr="sheridanEmail" placeholder="FANGYUX@sheridancollege.ca"><br>
+	</fieldset>
+	
+	<fieldset id="form2">
+		<legend class="le">Sheridan Experience</legend>
+		Date Field: <input type="date"><br>
+		Previous years of post-secondary experience: <input type="number" placeholder="0"><br>
+		Campus: <select placeholder="Davis">
+					<option value="Davis">Davis</option>
+					<option value="HMC">HMC</option>
+					<option value="Trafalgar">Trafalgar</option>
+				</select>
+	</fieldset>
+	
+	<fieldset id="form3">
+		<legend class="le">Financial Data</legend>
+		Amount of Money: <input type="number"><br>
+		Money Source:
+		<ul>
+			<li>Scholarship <input type="checkbox"></li>
+			<li>OSAP<input type="checkbox"></li>
+			<li>RESP<input type="checkbox"></li>
+			<li>Bursary<input type="checkbox"></li>
+		</ul>
+	</fieldset>
+	
+	<fieldset id="comment">
+		<legend class="le">Comment Area</legend>
+		<textarea rows="15" cols="88" style="resize:none"></textarea>
+	</fieldset>
+	
+	<fieldset id="submit">
+		<legend class="le">Submit/Reset Area<legend>
+		<input type="submit" id="submitbutton">
+		<input type="reset" id="resetbutton">
+	</form>
+	
+	<script>
+	function submit1(){
+		x=document.getElementById('LN').value;
+		y=document.getElementById('FN').value;
+		z=document.getElementById('SN').value;
+		
+		alert(y+" "+x+" "+z);
+	}
+	</script>
+</body>
+</html>
+	
+	
+	
+	
+	
